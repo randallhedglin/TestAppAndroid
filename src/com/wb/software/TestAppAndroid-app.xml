@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<application xmlns="http://ns.adobe.com/air/application/18.0">
+
+	<copyright>© 2015 WaveBreak Software LLC</copyright>
+	<customUpdateUI>false</customUpdateUI>
+	<description>App for testing (as the name implies)</description>
+	<filename>TestAppAndroid</filename>
+	<id>com.wb.software.TestAppAndroid</id>
+	<name>Test App</name>
+	<versionLabel>1.0.0</versionLabel>
+	<versionNumber>1.0.0</versionNumber>
+
+	<android>
+
+		<colorDepth>32bit</colorDepth>
+		<containsVideo>false</containsVideo>
+		
+        <manifestAdditions><![CDATA[
+
+			<manifest android:installLocation="auto">
+
+		    	<supports-screens android:smallScreens="false"
+		    					  android:normalScreens="true"
+		    					  android:largeScreens="true"
+		    					  android:xlargeScreens="true"/>
+		    	
+		    	<uses-feature android:name="android.hardware.screen.landscape" android:required="true"/>
+		    	<uses-feature android:name="android.touchscreen.multitouch" android:required="true"/>
+		    	
+				<uses-permission android:name="android.permission.INTERNET"/>
+		    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		    	
+			</manifest>
+
+		]]></manifestAdditions>
+
+    </android>
+
+	<extensions>
+        <extensionID>com.wb.software.AndroidANE</extensionID>
+    </extensions>
+
+	<!-- <icon>
+
+		<image16x16></image16x16>
+		<image29x29></image29x29>
+		<image32x32></image32x32>
+		<image36x36></image36x36>
+		<image48x48></image48x48>
+		<image50x50></image50x50>
+		<image57x57></image57x57>
+		<image58x58></image58x58>
+		<image72x72></image72x72>
+		<image100x100></image100x100>
+		<image114x114></image114x114>
+		<image128x128></image128x128>
+		<image144x144></image144x144>
+		<image512x512></image512x512>
+		<image1024x1024></image1024x1024>
+
+	</icon> -->
+
+	<initialWindow>
+
+        <aspectRatio>landscape</aspectRatio>
+        <autoOrients>true</autoOrients>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+        <depthAndStencil>false</depthAndStencil>
+        <fullScreen>true</fullScreen>
+        <renderMode>direct</renderMode>
+		<softKeyboardBehavior>none</softKeyboardBehavior>
+	    <visible>false</visible>
+
+    </initialWindow>
+
+</application>
